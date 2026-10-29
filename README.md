@@ -2,7 +2,9 @@
 
 <!-- [Download PDF](https://github.com/CMME-Lab/SMILE) -->
 
-Haris Ghafoor, Minjee Seo, Seonaeng Cho, Keungmo Yang, Jaejun Lee, Kyungho Yoon
+Haris Ghafoor†, Minjee Seo†, Seonaeng Cho, Keungmo Yang, Jaejun Lee, Kyungho Yoon
+
+(† equal contribution)
 
 
 ## Summary

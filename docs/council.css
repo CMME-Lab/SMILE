@@ -136,6 +136,8 @@
 
 .judgement[data-focus=a] .agent-pod,.judgement[data-focus=b] .agent-pod,.judgement[data-focus=c] .agent-pod{transition:opacity .2s}
 
+.publication-note{margin:-8px auto 13px;color:#6b6b6b;font-size:13.5px}
+
 .play-button{display:inline-flex;align-items:center;gap:6px;height:35px;padding:0 14px;border:1px solid #dee4ea;border-radius:19px;background:#fff;font-size:11.5px;font-weight:700;color:#454545;transition:background .2s,border-color .2s}
 .play-button:hover{background:#eef5f8}
 .play-button.is-playing{background:#363636;border-color:#363636;color:#fff}
@@ -143,7 +145,11 @@
 .sound-toggle{width:35px;height:35px;border:1px solid #dee4ea;border-radius:50%;background:#fff;font-size:14px;line-height:1;padding:0;transition:background .2s}
 .sound-toggle:hover{background:#eef5f8}
 .sound-toggle[aria-pressed=false]{opacity:.5}
-.story-toolbar .case-controls{display:flex;align-items:center;gap:9px}
+.story-toolbar .case-controls{display:flex;align-items:center;gap:9px;margin-left:auto}
+
+.intro-blurb h2,.method-section h2,.section-title h2,.citation-section h2,.credits-wrapper h2{text-align:center}
+.section-title>p{text-align:center}
+#demo .section-title{margin-bottom:18px}
 
 .result-subhead,.ablation-heading{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
 .metric-hint{font-size:11px;font-weight:600;color:#8a8a8a}

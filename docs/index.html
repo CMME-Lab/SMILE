@@ -14,10 +14,11 @@
 <header class="head container"><p class="publication-venue">WACV 2027 · Applications Track</p>
 <h1>SMILE: A Structured Multi-Agent Clinical Reasoning for Liver Ultrasound Understanding</h1>
 <div aria-label="Paper authors" class="publication-authors">
-<span>Haris Ghafoor</span>, <span>Minjee Seo</span>, <span>Seonaeng Cho</span>,
-<span>K. Yang</span>, <span>J. Lee</span>, <span>Kyungho Yoon</span>
+<span>Haris Ghafoor<sup>&dagger;</sup></span>, <span>Minjee Seo<sup>&dagger;</sup></span>, <span>Seonaeng Cho</span>,
+<span>Keungmo Yang</span>, <span>Jaejun Lee</span>, <span>Kyungho Yoon</span>
 </div>
 <p class="publication-affiliation">Yonsei University</p>
+<p class="publication-note">(<sup>&dagger;</sup> equal contribution)</p>
 <!-- Replace the placeholder hrefs below with the final paper, slides and video URLs. -->
 <div aria-label="Paper resources" class="pub-links">
 <a class="pub-link" href="https://github.com/CMME-Lab/SMILE">
@@ -33,10 +34,10 @@
 <svg aria-hidden="true" class="pub-icon" viewbox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8z" fill="#ff0000"></path><path d="M9.6 15.6V8.4l6.3 3.6z" fill="#ffffff"></path></svg>
 <span>Video</span></a>
 </div></header>
-<section aria-labelledby="demo-title" class="story-section container" id="demo">
-<div class="section-title"><h2 id="demo-title">Three specialists, one report</h2><p>Tap each agent to hear it out, then wake the judge.</p></div>
+<section aria-label="Interactive case studies" class="story-section container" id="demo">
+<div class="section-title"><p>Tap each agent to hear it out, then wake the judge.</p></div>
 <div class="story-frame">
-<div class="story-toolbar"><div class="story-title">Case studies</div><div class="case-controls"><button class="play-button" id="play-button" type="button"><span aria-hidden="true" id="play-icon">▶</span> <span id="play-label">Play case</span></button><button aria-label="Mute agent sounds" aria-pressed="true" class="sound-toggle" id="sound-toggle" type="button"><span aria-hidden="true" id="sound-icon">🔊</span></button><button aria-label="Previous case" class="round-control" id="case-prev" type="button">←</button><span class="case-counter" id="case-counter">01 / 04</span><button aria-label="Next case" class="round-control" id="case-next" type="button">→</button></div></div>
+<div class="story-toolbar"><div class="case-controls"><button class="play-button" id="play-button" type="button"><span aria-hidden="true" id="play-icon">▶</span> <span id="play-label">Play case</span></button><button aria-label="Mute agent sounds" aria-pressed="true" class="sound-toggle" id="sound-toggle" type="button"><span aria-hidden="true" id="sound-icon">🔊</span></button><button aria-label="Previous case" class="round-control" id="case-prev" type="button">←</button><span class="case-counter" id="case-counter">01 / 04</span><button aria-label="Next case" class="round-control" id="case-next" type="button">→</button></div></div>
 <div class="case-strip">
 <div class="input-image"><img alt="Liver ultrasound example from the manuscript" id="ultrasound" loading="eager" src="assets/ultrasound/case_01.webp"/><div class="input-tag">INPUT · ULTRASOUND</div></div>
 <div class="case-meta"><span class="case-eyebrow">CASE <span id="case-number">01</span></span><h3 id="case-heading"></h3><p id="case-description"></p><div class="case-chips"><span class="case-chip" id="case-type"></span></div></div>
