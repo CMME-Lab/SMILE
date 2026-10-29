@@ -30,7 +30,7 @@ Statistics: 1,417 liver ultrasound images obtained from 286 patients (mean age: 
 
 ### 3. Models
 
-Download the three LoRA adapters from [link](TODO) and place them under `weights/`:
+Download the three LoRA adapters from [link](https://drive.google.com/drive/folders/12LpN1XdVRb_BUdjzGD-AZFr-3eQormW-?usp=sharing) and place them under `weights/`:
 
 ```
 weights/
@@ -70,4 +70,4 @@ python scripts/evaluate.py --results runs/d1_council.json --dataset d1 \
 
 ## Disclaimer
 
-The code is released under the [MIT License](LICENSE). If you use this codebase, the models or the dataset, please cite the paper above.
+If you use this codebase, the models or the dataset, please cite the paper above.
