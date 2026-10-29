@@ -20,3 +20,6 @@ data/
 
 AGENTS.md
 *.yaml
+# /smile-dataset
+/smile-dataset/images
+smile-dataset/README.md
