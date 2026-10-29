@@ -1,0 +1,90 @@
+/* CVPR-style editorial refinement: scholarly title/author header, concise sections,
+   dense yet readable spacing, with existing interactive behavior preserved. */
+:root{--ink:#252c38;--muted:#646f7c;--line:#e2e7ed;--bg:#fff}
+body{font-family:'DM Sans',Arial,sans-serif}
+.container{width:min(1030px,calc(100% - 38px))}
+.nav{height:54px;background:#ffffffed}
+.nav-inner{height:54px;width:min(1060px,calc(100% - 38px));gap:20px}
+.nav-logo{font-size:18px;letter-spacing:-.65px}
+.nav-links{gap:24px}
+.nav-links a{font-size:12px;font-weight:600}
+.head{padding:52px 0 14px;text-align:center}
+.venue{margin:0 0 12px;font-size:12px;font-weight:700;color:#587b7f;letter-spacing:.75px;text-transform:none}
+.head h1{display:block;font-size:clamp(27px,3.05vw,43px);line-height:1.19;letter-spacing:-1.2px;font-weight:750;max-width:925px;margin:0 auto 17px}
+.title-brand{font-weight:800;color:#2d7e7a}
+.authors{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;column-gap:17px;row-gap:5px;max-width:920px;margin:0 auto 11px;line-height:1.45}
+.authors a,.authors span{font-size:16px;font-weight:500;color:#315889}
+.authors a:hover{text-decoration:underline;color:#276b86}
+.affiliations{color:#5c6674;font-size:13px;margin:0 auto 16px;line-height:1.5}
+.affil-note{font-size:11px;color:#a1a7af}
+.head-actions{gap:8px;margin:0 auto 10px}
+.pill{min-height:34px;padding:7px 16px;font-size:12px;border:1px solid #d8e0e8;box-shadow:none}
+.pill.primary{background:#365f7f;border-color:#365f7f}
+.pill.disabled{background:#f7f9fb;color:#a0a8b3}
+.intro-blurb{padding:18px 0 25px;text-align:left;border-bottom:1px solid var(--line)}
+.intro-blurb h2{font-size:21px;letter-spacing:-.35px;margin:0 0 8px;text-align:left}
+.intro-blurb p{max-width:none;line-height:1.65;font-size:14px;letter-spacing:-.04px;margin:0;color:#576271;text-align:left}
+.story-section,.results-section,.ablation-section{padding-top:35px}
+.section-title{max-width:none;text-align:left;margin:0 auto 16px}
+.section-title h2{font-size:clamp(24px,2.9vw,30px);letter-spacing:-.85px;margin:0 0 7px;font-weight:750;line-height:1.25}
+.section-title>p{font-size:13px;line-height:1.6;margin:0;color:#6b7480;max-width:925px}
+.story-frame{border-radius:12px;box-shadow:0 6px 25px #2233440c}
+.story-toolbar{padding:10px 17px}
+.story-title{font-size:12px}
+.case-strip{grid-template-columns:minmax(0,1fr) 285px;gap:19px;padding:18px 22px;min-height:0}
+.case-identity h3{font-size:24px;letter-spacing:-.6px;margin:5px 0 6px}
+.case-identity>p{font-size:12px;max-width:455px}
+.case-eyebrow{font-size:9px;letter-spacing:1px}
+.case-chips{margin-top:12px}
+.case-chip{padding:5px 9px;font-size:10px}
+.input-views{max-width:285px}
+.input-image{height:160px;border-radius:9px}
+.input-tag{font-size:8px;bottom:7px;left:8px;padding:5px 7px}
+.reference-toggle{padding:8px 12px;font-size:10px}
+.tiny-instruction{padding:12px 12px 8px;font-size:12px}
+.characters{padding:7px 13px 10px;gap:10px}
+.character-card{border-radius:12px}
+.character-button{min-height:230px;padding:8px 8px 7px}
+.character-scene{height:114px}
+.character-avatar{height:115px;width:98px}
+.character-shadow{width:70px;bottom:4px}
+.character-persona{min-height:68px;gap:3px}
+.character-id{font-size:9px}
+.character-persona b{font-size:16px}
+.character-persona>span:last-child{font-size:10px;line-height:1.25}
+.tap-callout{padding:7px 12px;margin:9px auto 3px;font-size:10px}
+.report-sheet{padding:10px 12px;margin:0 8px 8px}
+.sheet-header{font-size:9px}
+.report-text{font-size:11px;line-height:1.58}
+.judge-row{padding:11px 15px;margin:0 13px}
+.judge-person p{margin:2px 0 0;font-size:11px}
+.judgement{margin:10px 13px}
+.judgement-content{padding:15px}
+.final-text{font-size:13px;line-height:1.65;margin:8px 0 10px}
+.case-lesson{padding:9px 11px;font-size:11px}
+.story-footer{padding:6px 15px 12px}
+.results-section{padding-bottom:0}
+.result-card,.ablation-card{padding:18px 21px;border-radius:12px;box-shadow:0 6px 25px #2233440b}
+.result-head{padding-bottom:13px}
+.result-subhead{padding:14px 0 6px}
+.result-subhead h3,.ablation-heading h3{font-size:21px;margin:5px 0 6px;letter-spacing:-.5px}
+.result-subhead p,.ablation-heading p{font-size:11px;line-height:1.55}
+.bar-chart,.ablation-bars{gap:8px;padding:11px 0}
+.bar-item,.ab-bar{grid-template-columns:155px 1fr 44px;gap:13px}
+.bar-track,.ab-track{height:18px;border-radius:6px}
+.bar-fill,.ab-fill{border-radius:6px}
+.bar-name,.ab-name{font-size:11px}
+.bar-value,.ab-value{font-size:12px}
+.result-takeaway{margin-top:8px;padding:8px 12px;font-size:11px;line-height:1.5;border-radius:8px}
+.ablation-section{padding-bottom:40px}
+.ablation-heading{padding:13px 0 10px}
+.ablation-bars{padding:13px 0 4px}
+.ablation-insight{margin:9px 0 0;padding:9px 12px;font-size:11px;line-height:1.55;border-radius:8px}
+.ab-tab{font-size:11px;padding:8px 11px}
+.metric-toggle button{font-size:10px;padding:8px 10px}
+.foot-row{padding:15px 0}
+.foot-row strong{font-size:13px;letter-spacing:-.2px}
+.foot-row>span,.foot-row>a{font-size:10px}
+@media(max-width:920px){.case-strip{grid-template-columns:minmax(0,1fr) 240px}.input-views{max-width:240px}.bar-item,.ab-bar{grid-template-columns:120px 1fr 44px}.character-button{min-height:221px}.character-scene{height:110px}}
+@media(max-width:720px){.container{width:calc(100% - 28px)}.nav-inner{width:calc(100% - 28px)}.head{padding:30px 0 11px}.head h1{font-size:clamp(26px,6.1vw,35px);line-height:1.22;margin-bottom:13px}.authors{column-gap:12px;row-gap:3px;margin-bottom:8px}.authors a,.authors span{font-size:13px}.affiliations{font-size:11px;margin-bottom:12px}.affil-note{font-size:10px}.intro-blurb{padding:16px 0 18px}.intro-blurb h2{font-size:19px}.intro-blurb p{font-size:12px;line-height:1.65}.story-section,.results-section,.ablation-section{padding-top:25px}.section-title{margin-bottom:13px}.section-title h2{font-size:23px;letter-spacing:-.45px}.section-title>p{font-size:12px;line-height:1.5}.case-strip{grid-template-columns:1fr;gap:12px;padding:14px}.case-identity h3{font-size:21px}.input-views{max-width:100%;grid-template-columns:140px minmax(0,1fr);gap:8px}.input-image{height:126px}.character-button{min-height:133px;grid-template-columns:103px 1fr;grid-template-rows:1fr 30px;padding:4px 7px;gap:0 4px}.character-scene{width:100px;height:130px}.character-avatar{height:125px;width:95px}.character-persona{min-height:0;align-items:start;justify-content:center}.character-persona b{font-size:16px}.character-persona>span:last-child{font-size:10px}.tap-callout{margin:0 0 3px;padding:5px 9px}.tiny-instruction{padding:10px 8px 7px}.characters{padding:5px 8px 8px;gap:7px}.judge-row{margin:0 8px}.judgement{margin:8px}.judgement-content{padding:11px}.final-text{font-size:12px}.story-footer{padding:5px 8px 10px}.result-card,.ablation-card{padding:13px}.result-head{gap:10px}.result-subhead{padding-top:11px}.result-subhead h3,.ablation-heading h3{font-size:19px}.bar-item{grid-template-columns:95px 1fr 36px;gap:7px}.ab-bar{grid-template-columns:112px 1fr 36px;gap:7px}.bar-name,.ab-name{font-size:10px}.bar-track,.ab-track{height:16px}.bar-value,.ab-value{font-size:11px}.ablation-section{padding-bottom:24px}.foot-row{gap:8px}.foot-row>span{width:100%;order:3}}
+@media(max-width:380px){.head h1{font-size:25px}.input-views{grid-template-columns:121px 1fr}.input-image{height:117px}.character-button{grid-template-columns:94px 1fr}.character-scene{width:90px}.character-avatar{width:89px}}

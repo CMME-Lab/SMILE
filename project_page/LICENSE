@@ -1,0 +1,25 @@
+Copyright (c) 2026 Haris Ghafoor and the SMILE authors.
+All rights reserved except as granted below.
+
+This project page -- its HTML, CSS and JavaScript, its written text, and the
+agent and judge illustrations -- is licensed under the Creative Commons
+Attribution-NonCommercial-NoDerivatives 4.0 International License
+(CC BY-NC-ND 4.0).
+
+Full licence text: https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode
+Summary:          https://creativecommons.org/licenses/by-nc-nd/4.0/
+
+In short, you may copy and redistribute this material in any medium or format,
+provided that you credit the authors and link to the licence. You may not use
+it for commercial purposes, and you may not distribute a modified version of
+it. Reusing this page as the basis of another project page is a derivative
+work and is not permitted under this licence.
+
+NOT COVERED BY THIS LICENCE
+
+1. The liver ultrasound images in assets/ultrasound/ are shown under the terms
+   of the source dataset and are not redistributable under this licence.
+2. The methodology figure in assets/ is reproduced from the SMILE manuscript
+   and remains subject to the publisher's copyright.
+3. The software in the parent repository is released separately; see the
+   LICENSE file at the repository root.
