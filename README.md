@@ -21,7 +21,7 @@ pip install -e ".[all]"
 
 ### 2. Datasets
 
-Download the datasets from [link](TODO) and place them under `data/`.
+Download the datasets from [link](https://drive.google.com/drive/folders/1g_ehYIhRkRcgtaOVuIunA2PyCdOr6jJp?usp=drive_link) and place them under `data/`.
 
 
 
